@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "DoneWithIt",
-    "slug": "DoneWithIt",
+    "name": "react native mini apps",
+    "slug": "reactnativeminiapps",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
-    }
+    },
+    "description": "It  is a compilation of mini apps that i used to learn react native",
+    "githubUrl": "https://github.com/MhrjAniiz/react-native-learning-materials"
   }
 }

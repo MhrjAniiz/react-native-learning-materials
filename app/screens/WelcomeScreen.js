@@ -43,6 +43,11 @@ export default function WelcomeScreen({ navigation }) {
           <Text style={styles.link}>Go to customcolor</Text>
         </TouchableOpacity>
       </View>
+      <View style={styles.listButton}>
+        <TouchableOpacity onPress={() => navigation.navigate("Input")}>
+          <Text style={styles.link}>Go to Input</Text>
+        </TouchableOpacity>
+      </View>
     </ImageBackground>
   );
 }
@@ -55,13 +60,13 @@ const styles = StyleSheet.create({
   },
   loginButton: {
     width: "100%",
-    height: 50,
+    height: 30,
     backgroundColor: "#fc5c65",
   },
 
   listButton: {
     width: "100%",
-    height: 50,
+    height: 30,
     backgroundColor: "gold",
   },
 
@@ -76,8 +81,8 @@ const styles = StyleSheet.create({
   },
   link: {
     textAlign: "center",
-    fontSize: 25,
-    marginTop: 10,
+    fontSize: 20,
+    padding: 2,
     color: "white",
   },
 });

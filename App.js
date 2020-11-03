@@ -7,6 +7,7 @@ import Counter from "./app/screens/Counter";
 import List from "./app/screens/List";
 import ColorScreen from "./app/screens/ColorScreen";
 import CustomColor from "./app/screens/CustomColor";
+import Input from "./app/screens/Input";
 
 const stackNavigation = createStackNavigator();
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <stackNavigation.Screen name="list" component={List} />
         <stackNavigation.Screen name="color" component={ColorScreen} />
         <stackNavigation.Screen name="custom" component={CustomColor} />
+        <stackNavigation.Screen name="Input" component={Input} />
       </stackNavigation.Navigator>
     </NavigationContainer>
   );
