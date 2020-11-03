@@ -5,6 +5,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import ImageScreen from "./app/screens/ImageScreen";
 import Counter from "./app/screens/Counter";
 import List from "./app/screens/List";
+import ColorScreen from "./app/screens/ColorScreen";
+import CustomColor from "./app/screens/CustomColor";
 
 const stackNavigation = createStackNavigator();
 export default function App() {
@@ -19,6 +21,8 @@ export default function App() {
         <stackNavigation.Screen name="counter" component={Counter} />
         <stackNavigation.Screen name="imageScreen" component={ImageScreen} />
         <stackNavigation.Screen name="list" component={List} />
+        <stackNavigation.Screen name="color" component={ColorScreen} />
+        <stackNavigation.Screen name="custom" component={CustomColor} />
       </stackNavigation.Navigator>
     </NavigationContainer>
   );

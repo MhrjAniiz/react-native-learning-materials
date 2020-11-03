@@ -33,6 +33,16 @@ export default function WelcomeScreen({ navigation }) {
           <Text style={styles.link}>Go to list</Text>
         </TouchableOpacity>
       </View>
+      <View style={styles.colorButton}>
+        <TouchableOpacity onPress={() => navigation.navigate("color")}>
+          <Text style={styles.link}>Go to color</Text>
+        </TouchableOpacity>
+      </View>
+      <View style={styles.loginButton}>
+        <TouchableOpacity onPress={() => navigation.navigate("custom")}>
+          <Text style={styles.link}>Go to customcolor</Text>
+        </TouchableOpacity>
+      </View>
     </ImageBackground>
   );
 }
@@ -45,19 +55,24 @@ const styles = StyleSheet.create({
   },
   loginButton: {
     width: "100%",
-    height: 70,
+    height: 50,
     backgroundColor: "#fc5c65",
   },
 
   registerButton: {
     width: "100%",
-    height: 70,
+    height: 50,
     backgroundColor: "#4ecdc4",
   },
   listButton: {
     width: "100%",
-    height: 70,
+    height: 50,
     backgroundColor: "gold",
+  },
+  colorButton: {
+    width: "100%",
+    height: 50,
+    backgroundColor: "green",
   },
   logo: {
     width: 100,
