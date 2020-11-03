@@ -8,7 +8,7 @@ export default function CustomColor() {
   const [green, setGreen] = useState(0);
   const [blue, setBlue] = useState(0);
 
-  const COLOR_INCREMENT = 15;
+  const COLOR_INCREMENT = 10;
 
   const setColor = (color, change) => {
     switch (color) {
@@ -65,12 +65,13 @@ export default function CustomColor() {
       </View>
       <View
         style={{
-          marginTop: 70,
-          width: 200,
-          height: 200,
+          marginTop: 50,
+          width: 180,
+          height: 180,
           backgroundColor: `rgb(${red}, ${green}, ${blue})`,
         }}
       ></View>
+      <Text>{`color hexcode : rgb(${red}, ${green}, ${blue})`}</Text>
     </View>
   );
 }

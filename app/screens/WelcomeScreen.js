@@ -23,17 +23,17 @@ export default function WelcomeScreen({ navigation }) {
           <Text style={styles.link}>Go to Counter</Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.registerButton}>
+      <View style={styles.listButton}>
         <TouchableOpacity onPress={() => navigation.navigate("imageScreen")}>
           <Text style={styles.link}>Go to ImageScreen</Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.listButton}>
+      <View style={styles.loginButton}>
         <TouchableOpacity onPress={() => navigation.navigate("list")}>
           <Text style={styles.link}>Go to list</Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.colorButton}>
+      <View style={styles.listButton}>
         <TouchableOpacity onPress={() => navigation.navigate("color")}>
           <Text style={styles.link}>Go to color</Text>
         </TouchableOpacity>
@@ -59,21 +59,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#fc5c65",
   },
 
-  registerButton: {
-    width: "100%",
-    height: 50,
-    backgroundColor: "#4ecdc4",
-  },
   listButton: {
     width: "100%",
     height: 50,
     backgroundColor: "gold",
   },
-  colorButton: {
-    width: "100%",
-    height: 50,
-    backgroundColor: "green",
-  },
+
   logo: {
     width: 100,
     height: 100,
